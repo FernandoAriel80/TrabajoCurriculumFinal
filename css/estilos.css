@@ -1,0 +1,200 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;   
+}
+footer{
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(to right,#615BD9, #728DF0,#5B97D9);
+}
+
+header{
+    height: 500px;
+    width: auto;
+    background: linear-gradient(to right,#615BD9, #728DF0,#5B97D9);
+    color: #fff;
+    text-align: center;
+}
+
+header h1 {    
+    padding-top: 100px;
+    font-size: 48px;
+    font-weight: 100;
+    text-align: center;
+}
+
+.carta{
+    top: -300px; 
+    background-color: #fff;
+    position: relative;
+    border:10px double #B7BBB6;
+    height: 100%;
+    width: auto; 
+    border-radius: 30px;
+}
+
+.foto img{    
+    margin-top:10px;
+    margin-bottom: 10px;
+    left: 50%;
+    transform: translate( -50%);
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    position: relative;
+    border: 5px solid #B7BBB6;
+    border-radius: 50%;
+}
+
+.nombre h2,h3{    
+    padding: 20px;
+    font-size: 40px;
+    flex-basis: 60px; 
+    text-align: center;
+}
+
+.lista {
+    font-size: 70px;
+    font-weight: 100;
+    flex-basis: 60px;       
+}
+
+#icocnos{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+.uno-titulo,.dos-titulo,.tres-titulo,.cuatro-titulo {
+    margin: 10px;
+    height: 90px;
+    margin-bottom:2px;
+    background: linear-gradient(to right,#3052D9, #30ABD9);
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.uno-info,.dos-info,.tres-info,.cuatro-info{    
+    margin: 10px;
+    margin-top: 0px;
+    height: auto;
+    font-size: 25px;
+    opacity: 0;
+    background-color: #9AF985;
+    position: relative;
+    border-radius: 0px 0px 10px 10px ;
+}
+
+#tex-p{
+    text-align:center;
+    font-size: 20px;
+    font-weight: 100;
+    padding:15px;   
+}
+
+.mas-datos{
+    top: -300px; 
+    left: 5%;
+    background-color: #fff;
+    margin: 20px;
+    position: relative;
+    border:10px double #B7BBB6;
+    height: 100%; 
+    width: 80%;
+    border-radius: 30px;
+}
+
+.mas-top,.mas-bottom{   
+   margin:8px;
+}
+
+.tex-datos1,.tex-datos2,.tex-datos3,.tex-datos4{
+    padding: 10px;
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    background-color:#9AF985;
+    margin: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* =======================computadoras y tablets==========================================*/
+
+@media screen and (min-width: 1000px){
+    
+    .carta{
+        margin: 40px;
+        display: flex;
+        overflow: hidden;
+        position: relative;
+        
+    }
+    .foto img{        
+        margin: 20px;
+        object-fit: cover;
+        width:300px;
+        height:300px;
+        transform: translate( -58%);
+    }
+
+    .side-izquierda{
+        margin: 10px;
+    }
+
+    .nombre h2{
+        margin-top: 60px;  
+        text-align: center; 
+        position: relative;
+    }
+
+    .lista {  
+        display: flex;
+        position: relative;
+        font-size: 40px;
+        margin-top: 50px;   
+    }
+
+    .uno,.dos,.tres,.cuatro{
+      margin-right: 10px; 
+    }
+
+    .uno-titulo,.dos-titulo,.tres-titulo,.cuatro-titulo{
+        height: 100px;
+    }
+
+     .uno-info,.dos-info,.tres-info,.cuatro-info{
+        margin: 10px;
+        margin-top: 0px;
+        height: auto;
+        width: 200px;
+        position: relative;
+        opacity: 0;
+        border-radius: 0px 0px 10px 10px ;
+        font-size: 20px;
+        background-color: #9AF985; 
+    }
+    
+    .mas-datos{
+        position: relative;
+        left: 8%;
+    }
+
+    .mas-top,.mas-bottom{
+        display: flex;
+        padding:10px 30px;    
+    }
+
+    .tex-datos1,.tex-datos2,.tex-datos3,.tex-datos4{
+        height: 500px;
+        width: 100%;
+        font-size: 30px;
+        box-shadow:-10px 9px 20px black;
+        border-radius: 15px;        
+    }
+
+}
